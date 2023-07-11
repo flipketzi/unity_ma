@@ -1,0 +1,68 @@
+{
+    "levelDifficulty": {
+        "lesson_num": 7
+    },
+    "base": {
+        "checkpoints": [
+            {
+                "steps": 4499994,
+                "file_path": "results\\lightFloor\\base\\base-4499994.onnx",
+                "reward": 1.608956504613161,
+                "creation_time": 1684337101.6535861,
+                "auxillary_file_paths": [
+                    "results\\lightFloor\\base\\base-4499994.pt"
+                ]
+            },
+            {
+                "steps": 4999970,
+                "file_path": "results\\lightFloor\\base\\base-4999970.onnx",
+                "reward": 1.3645706826022692,
+                "creation_time": 1684338004.3248668,
+                "auxillary_file_paths": [
+                    "results\\lightFloor\\base\\base-4999970.pt"
+                ]
+            },
+            {
+                "steps": 5499965,
+                "file_path": "results\\lightFloor\\base\\base-5499965.onnx",
+                "reward": 2.3236912998060384,
+                "creation_time": 1684338908.1888173,
+                "auxillary_file_paths": [
+                    "results\\lightFloor\\base\\base-5499965.pt"
+                ]
+            },
+            {
+                "steps": 5999954,
+                "file_path": "results\\lightFloor\\base\\base-5999954.onnx",
+                "reward": 2.960963820417722,
+                "creation_time": 1684339814.5388188,
+                "auxillary_file_paths": [
+                    "results\\lightFloor\\base\\base-5999954.pt"
+                ]
+            },
+            {
+                "steps": 6393330,
+                "file_path": "results\\lightFloor\\base\\base-6393330.onnx",
+                "reward": 0.5979945715516806,
+                "creation_time": 1684340558.0995865,
+                "auxillary_file_paths": [
+                    "results\\lightFloor\\base\\base-6393330.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 6393330,
+            "file_path": "results\\lightFloor\\base.onnx",
+            "reward": 0.5979945715516806,
+            "creation_time": 1684340558.0995865,
+            "auxillary_file_paths": [
+                "results\\lightFloor\\base\\base-6393330.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

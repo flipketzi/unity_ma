@@ -1,0 +1,5 @@
+mlagents-learn MachineLearningStuff\Configurations\behaviorsPPO.yaml --run-id=firstNewModel --torch-device=cuda
+
+C:\Users\Philipp\Documents\Unity Projects\MA Projekt\new try\SimToReal\Unity\Assets
+tensorboard --logdir results 
+tensorboard --logdir results --reload_multifile True

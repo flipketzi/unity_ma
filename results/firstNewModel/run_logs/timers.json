@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1684328212",
+        "python_version": "3.8.16 (default, Mar  2 2023, 03:18:16) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\Philipp\\anaconda3\\envs\\ml\\Scripts\\mlagents-learn Assets/MachineLearningStuff/Configurations/behaviorsPPO.yaml --run-id=firstNewModel --torch-device=cuda",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.1+cu110",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1684328228"
+    },
+    "total": 15.987906099999998,
+    "count": 1,
+    "self": 0.017848699999998274,
+    "children": {
+        "run_training.setup": {
+            "total": 0.04838750000000003,
+            "count": 1,
+            "self": 0.04838750000000003
+        },
+        "TrainerController.start_learning": {
+            "total": 15.9216699,
+            "count": 1,
+            "self": 0.00029570000000411767,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 15.9213646,
+                    "count": 1,
+                    "self": 15.9213646
+                },
+                "trainer_threads": {
+                    "total": 9.999999974752427e-07,
+                    "count": 1,
+                    "self": 9.999999974752427e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 8.599999997471741e-06,
+                    "count": 1,
+                    "self": 8.599999997471741e-06
+                }
+            }
+        }
+    }
+}

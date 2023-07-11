@@ -1,0 +1,68 @@
+{
+    "levelDifficulty": {
+        "lesson_num": 9
+    },
+    "base": {
+        "checkpoints": [
+            {
+                "steps": 12499985,
+                "file_path": "results\\withoutBarrierWithLight\\base\\base-12499985.onnx",
+                "reward": 2.262470433178047,
+                "creation_time": 1684523573.9868186,
+                "auxillary_file_paths": [
+                    "results\\withoutBarrierWithLight\\base\\base-12499985.pt"
+                ]
+            },
+            {
+                "steps": 12999974,
+                "file_path": "results\\withoutBarrierWithLight\\base\\base-12999974.onnx",
+                "reward": 1.4667889432360728,
+                "creation_time": 1684524748.9503498,
+                "auxillary_file_paths": [
+                    "results\\withoutBarrierWithLight\\base\\base-12999974.pt"
+                ]
+            },
+            {
+                "steps": 13499947,
+                "file_path": "results\\withoutBarrierWithLight\\base\\base-13499947.onnx",
+                "reward": 1.3530159371870536,
+                "creation_time": 1684525898.6232588,
+                "auxillary_file_paths": [
+                    "results\\withoutBarrierWithLight\\base\\base-13499947.pt"
+                ]
+            },
+            {
+                "steps": 13999974,
+                "file_path": "results\\withoutBarrierWithLight\\base\\base-13999974.onnx",
+                "reward": 1.4481556229293346,
+                "creation_time": 1684527057.6029696,
+                "auxillary_file_paths": [
+                    "results\\withoutBarrierWithLight\\base\\base-13999974.pt"
+                ]
+            },
+            {
+                "steps": 14302840,
+                "file_path": "results\\withoutBarrierWithLight\\base\\base-14302840.onnx",
+                "reward": 1.9556346966326237,
+                "creation_time": 1684528098.3008924,
+                "auxillary_file_paths": [
+                    "results\\withoutBarrierWithLight\\base\\base-14302840.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 14302840,
+            "file_path": "results\\withoutBarrierWithLight\\base.onnx",
+            "reward": 1.9556346966326237,
+            "creation_time": 1684528098.3008924,
+            "auxillary_file_paths": [
+                "results\\withoutBarrierWithLight\\base\\base-14302840.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

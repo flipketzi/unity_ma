@@ -1,0 +1,68 @@
+{
+    "levelDifficulty": {
+        "lesson_num": 11
+    },
+    "base": {
+        "checkpoints": [
+            {
+                "steps": 23499965,
+                "file_path": "results\\firstAppearanceVariance\\base\\base-23499965.onnx",
+                "reward": 2.142686297663966,
+                "creation_time": 1688871257.467756,
+                "auxillary_file_paths": [
+                    "results\\firstAppearanceVariance\\base\\base-23499965.pt"
+                ]
+            },
+            {
+                "steps": 23999980,
+                "file_path": "results\\firstAppearanceVariance\\base\\base-23999980.onnx",
+                "reward": 2.381810309737921,
+                "creation_time": 1688872633.7173574,
+                "auxillary_file_paths": [
+                    "results\\firstAppearanceVariance\\base\\base-23999980.pt"
+                ]
+            },
+            {
+                "steps": 24499981,
+                "file_path": "results\\firstAppearanceVariance\\base\\base-24499981.onnx",
+                "reward": 2.8132396288216115,
+                "creation_time": 1688874008.1851661,
+                "auxillary_file_paths": [
+                    "results\\firstAppearanceVariance\\base\\base-24499981.pt"
+                ]
+            },
+            {
+                "steps": 24999998,
+                "file_path": "results\\firstAppearanceVariance\\base\\base-24999998.onnx",
+                "reward": 2.335058487537834,
+                "creation_time": 1688875388.0447924,
+                "auxillary_file_paths": [
+                    "results\\firstAppearanceVariance\\base\\base-24999998.pt"
+                ]
+            },
+            {
+                "steps": 25000062,
+                "file_path": "results\\firstAppearanceVariance\\base\\base-25000062.onnx",
+                "reward": 2.335058487537834,
+                "creation_time": 1688875388.167816,
+                "auxillary_file_paths": [
+                    "results\\firstAppearanceVariance\\base\\base-25000062.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 25000062,
+            "file_path": "results\\firstAppearanceVariance\\base.onnx",
+            "reward": 2.335058487537834,
+            "creation_time": 1688875388.167816,
+            "auxillary_file_paths": [
+                "results\\firstAppearanceVariance\\base\\base-25000062.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
