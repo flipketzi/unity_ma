@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
@@ -23,11 +24,13 @@ public class MBot_AI_2_ToReal : Agent
     [SerializeField] bool sendToRealRobot = false;
     [SerializeField] bool batteryDeathIrrelevant = false;
     [SerializeField] float batteryCapacity = 0;
+    [SerializeField] RawImage directionArrow;
     ArticulationDrive wheelDrive;
     public float actionM1 = 0;
     public float actionM2 = 0;
     public int intM1 = 0;
     public int intM2 = 0;
+    private int maxMapping = 150;
 
     float BatteryCapacity
     {
@@ -55,7 +58,8 @@ public class MBot_AI_2_ToReal : Agent
         var leftWheelDrive = Mathf.Clamp(actionM1, -1f, 1f);
         var rightWheelDrive = Mathf.Clamp(actionM2, -1f, 1f);
 
-        Debug.Log($"Action M1: {actionM1} Action M2: {actionM2}");
+        //Debug.Log($"Action M1: {actionM1} Action M2: {actionM2}");
+        SetArrow(actionM1, actionM2);
 
         if (sendToRealRobot)
         {
@@ -79,26 +83,47 @@ public class MBot_AI_2_ToReal : Agent
             EndEpisode();
         }
     }
+    private float Remap (float value, float from1, float to1, float from2, float to2) {
+        return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
+    }
+    void SetArrow(float m1, float m2){
+        if(directionArrow == null){
+            return;
+        }
+        if(m1 > 0){
+            m1 = 0;
+        }
+        if(m2 > 0){
+            m2 = 0;
+        }
+        float sum = m1 - m2;
+        float rotation = Remap(sum, -1f, 1f, -90f, 90f);
+        directionArrow.transform.eulerAngles = new Vector3(
+            directionArrow.transform.eulerAngles.x,
+            directionArrow.transform.eulerAngles.y,
+            rotation
+        );
+    }
 
     void SendMessage()
     {
         //M1
         if (actionM1 > 0)
         {
-            intM1 = Mathf.RoundToInt(Mathf.Lerp(0, -250, actionM1));
+            intM1 = Mathf.RoundToInt(Mathf.Lerp(0, -maxMapping, actionM1));
         }
         if (actionM1 <= 0)
         {
-            intM1 = Mathf.RoundToInt(Mathf.Lerp(0, 250, Mathf.Abs(actionM1)));
+            intM1 = Mathf.RoundToInt(Mathf.Lerp(0, maxMapping, Mathf.Abs(actionM1)));
         }
         //M2
         if (actionM2 > 0)
         {
-            intM2 = Mathf.RoundToInt(Mathf.Lerp(0, -250, actionM2));
+            intM2 = Mathf.RoundToInt(Mathf.Lerp(0, -maxMapping, actionM2));
         }
         if (actionM2 <= 0)
         {
-            intM2 = Mathf.RoundToInt(Mathf.Lerp(0, 250, Mathf.Abs(actionM2)));
+            intM2 = Mathf.RoundToInt(Mathf.Lerp(0, maxMapping, Mathf.Abs(actionM2)));
         }
 
         SendLogic();

@@ -13431,6 +13431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3161135247752907720}
   - component: {fileID: 3161135247752907721}
+  - component: {fileID: 5374962265976852043}
   m_Layer: 0
   m_Name: Camera Module v2
   m_TagString: Untagged
@@ -13497,6 +13498,25 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &5374962265976852043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3161135247752907735}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00eefdb769e6f894b9264ea7df5331b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: 12e387563b89e4c4db9e112f25835df5, type: 3}
+  thickness: 1
+  depthMultiplier: 1
+  depthBias: 0.5
+  normalMultiplier: 1
+  normalBias: 10
+  color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &3161135248093800246
 GameObject:
   m_ObjectHideFlags: 0

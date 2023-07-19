@@ -1,0 +1,68 @@
+{
+    "levelDifficulty": {
+        "lesson_num": 11
+    },
+    "base": {
+        "checkpoints": [
+            {
+                "steps": 23499960,
+                "file_path": "results\\sobelEdgeDetection\\base\\base-23499960.onnx",
+                "reward": 2.087005821781026,
+                "creation_time": 1689344670.046596,
+                "auxillary_file_paths": [
+                    "results\\sobelEdgeDetection\\base\\base-23499960.pt"
+                ]
+            },
+            {
+                "steps": 23999955,
+                "file_path": "results\\sobelEdgeDetection\\base\\base-23999955.onnx",
+                "reward": 2.3913018766891314,
+                "creation_time": 1689346218.5558538,
+                "auxillary_file_paths": [
+                    "results\\sobelEdgeDetection\\base\\base-23999955.pt"
+                ]
+            },
+            {
+                "steps": 24499972,
+                "file_path": "results\\sobelEdgeDetection\\base\\base-24499972.onnx",
+                "reward": 2.326390938567264,
+                "creation_time": 1689347761.607255,
+                "auxillary_file_paths": [
+                    "results\\sobelEdgeDetection\\base\\base-24499972.pt"
+                ]
+            },
+            {
+                "steps": 24999981,
+                "file_path": "results\\sobelEdgeDetection\\base\\base-24999981.onnx",
+                "reward": 2.60433033048067,
+                "creation_time": 1689349301.6595542,
+                "auxillary_file_paths": [
+                    "results\\sobelEdgeDetection\\base\\base-24999981.pt"
+                ]
+            },
+            {
+                "steps": 25000022,
+                "file_path": "results\\sobelEdgeDetection\\base\\base-25000022.onnx",
+                "reward": 2.6129770056259902,
+                "creation_time": 1689349301.8467028,
+                "auxillary_file_paths": [
+                    "results\\sobelEdgeDetection\\base\\base-25000022.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 25000022,
+            "file_path": "results\\sobelEdgeDetection\\base.onnx",
+            "reward": 2.6129770056259902,
+            "creation_time": 1689349301.8467028,
+            "auxillary_file_paths": [
+                "results\\sobelEdgeDetection\\base\\base-25000022.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
