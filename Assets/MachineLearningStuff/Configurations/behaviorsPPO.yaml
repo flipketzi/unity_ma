@@ -13,9 +13,9 @@ behaviors:
       num_epoch: 9
       learning_rate_schedule: linear
     network_settings:
-      normalize: false
+      normalize: true
       hidden_units: 128
-      num_layers: 2
+      num_layers: 3
       vis_encode_type: simple
       conditioning_type: hyper
       memory:

@@ -1,0 +1,68 @@
+{
+    "levelDifficulty": {
+        "lesson_num": 11
+    },
+    "base": {
+        "checkpoints": [
+            {
+                "steps": 23499957,
+                "file_path": "results\\collect_camera_128_84_gray_sobel_1_1_05_2_10\\base\\base-23499957.onnx",
+                "reward": 2.6816263760011347,
+                "creation_time": 1690002908.1722348,
+                "auxillary_file_paths": [
+                    "results\\collect_camera_128_84_gray_sobel_1_1_05_2_10\\base\\base-23499957.pt"
+                ]
+            },
+            {
+                "steps": 23999991,
+                "file_path": "results\\collect_camera_128_84_gray_sobel_1_1_05_2_10\\base\\base-23999991.onnx",
+                "reward": 2.6666551246174746,
+                "creation_time": 1690004249.9233513,
+                "auxillary_file_paths": [
+                    "results\\collect_camera_128_84_gray_sobel_1_1_05_2_10\\base\\base-23999991.pt"
+                ]
+            },
+            {
+                "steps": 24499936,
+                "file_path": "results\\collect_camera_128_84_gray_sobel_1_1_05_2_10\\base\\base-24499936.onnx",
+                "reward": 2.662283033842132,
+                "creation_time": 1690005589.913477,
+                "auxillary_file_paths": [
+                    "results\\collect_camera_128_84_gray_sobel_1_1_05_2_10\\base\\base-24499936.pt"
+                ]
+            },
+            {
+                "steps": 24999949,
+                "file_path": "results\\collect_camera_128_84_gray_sobel_1_1_05_2_10\\base\\base-24999949.onnx",
+                "reward": 2.9789175602296987,
+                "creation_time": 1690006930.947616,
+                "auxillary_file_paths": [
+                    "results\\collect_camera_128_84_gray_sobel_1_1_05_2_10\\base\\base-24999949.pt"
+                ]
+            },
+            {
+                "steps": 25000408,
+                "file_path": "results\\collect_camera_128_84_gray_sobel_1_1_05_2_10\\base\\base-25000408.onnx",
+                "reward": 2.99242768649544,
+                "creation_time": 1690006931.1039422,
+                "auxillary_file_paths": [
+                    "results\\collect_camera_128_84_gray_sobel_1_1_05_2_10\\base\\base-25000408.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 25000408,
+            "file_path": "results\\collect_camera_128_84_gray_sobel_1_1_05_2_10\\base.onnx",
+            "reward": 2.99242768649544,
+            "creation_time": 1690006931.1039422,
+            "auxillary_file_paths": [
+                "results\\collect_camera_128_84_gray_sobel_1_1_05_2_10\\base\\base-25000408.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

@@ -13432,6 +13432,7 @@ GameObject:
   - component: {fileID: 3161135247752907720}
   - component: {fileID: 3161135247752907721}
   - component: {fileID: 5374962265976852043}
+  - component: {fileID: 4057821613980777053}
   m_Layer: 0
   m_Name: Camera Module v2
   m_TagString: Untagged
@@ -13505,7 +13506,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3161135247752907735}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00eefdb769e6f894b9264ea7df5331b4, type: 3}
   m_Name: 
@@ -13514,9 +13515,23 @@ MonoBehaviour:
   thickness: 1
   depthMultiplier: 1
   depthBias: 0.5
-  normalMultiplier: 1
+  normalMultiplier: 2
   normalBias: 10
   color: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &4057821613980777053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3161135247752907735}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf7be7e363d5dd4c88c6481b83191a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sobelMaterial: {fileID: 2100000, guid: 0d672f254eb34b94f9ad63a8b8606e15, type: 2}
+  invertMaterial: {fileID: 2100000, guid: 4d266f6887337af4aad93f316ff40f3c, type: 2}
 --- !u!1 &3161135248093800246
 GameObject:
   m_ObjectHideFlags: 0
@@ -40583,7 +40598,7 @@ MonoBehaviour:
   m_SensorName: CameraSensor
   m_Width: 84
   m_Height: 84
-  m_Grayscale: 0
+  m_Grayscale: 1
   m_ObservationType: 0
   m_ObservationStacks: 1
   m_Compression: 1

@@ -18,9 +18,9 @@ public class SobelEdgeDetection : MonoBehaviour
 
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        if (material == null)
+        if (material == null){
             material = new Material(shader);
-
+        }
         material.SetFloat("_OutlineThickness", thickness);
         material.SetFloat("_OutlineDepthMultiplier", depthMultiplier);
         material.SetFloat("_OutlineDepthBias", depthBias);

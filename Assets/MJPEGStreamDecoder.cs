@@ -26,6 +26,16 @@ public class MJPEGStreamDecoder : MonoBehaviour
 
     [SerializeField] RenderTexture renderTexture;
 
+    [SerializeField] Material sobelMaterial;
+    [SerializeField] Material invertMaterial;
+
+    [SerializeField] private float thickness = 1;
+    [SerializeField] private float depthMultiplier = 1;
+    [SerializeField] private float depthBias = 1;
+    [SerializeField] private float normalMultiplier = 1;
+    [SerializeField] private float normalBias = 10;
+    [SerializeField] private Color color = Color.black;
+
     float RETRY_DELAY = 5f;
     int MAX_RETRIES = 3;
     int retryCount = 0;
@@ -212,9 +222,11 @@ public class MJPEGStreamDecoder : MonoBehaviour
         }
 
         if (texture2D.width == 2)
-            return; // Failure!
-
-        Graphics.Blit(texture2D, renderTexture);
-        Destroy(texture2D); // LoadImage discards the previous buffer, so there's no point in trying to reuse it
+                return; // Failure!
+        
+        RenderTexture rt = RenderTexture.GetTemporary(texture2D.width, texture2D.height);
+        Graphics.Blit(texture2D, rt, sobelMaterial);
+        Graphics.Blit(rt, renderTexture, invertMaterial);
+        RenderTexture.ReleaseTemporary(rt);
     }
 }

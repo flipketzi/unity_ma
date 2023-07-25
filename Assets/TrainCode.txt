@@ -1,4 +1,5 @@
 mlagents-learn MachineLearningStuff\Configurations\behaviorsPPO.yaml --run-id=firstNewModel --torch-device=cuda
+mlagents-learn MachineLearningStuff\Configurations\behaviorsPPO.yaml --run-id=collect_sobel_1_1_05_2_10 --torch-device=cuda --resume
 
 C:\Users\Philipp\Documents\Unity Projects\MA Projekt\new try\SimToReal\Unity\Assets
 tensorboard --logdir results 

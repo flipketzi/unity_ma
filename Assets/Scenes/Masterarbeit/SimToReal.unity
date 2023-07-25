@@ -642,7 +642,7 @@ RectTransform:
   m_GameObject: {fileID: 711492203}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.3, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 870749848}
@@ -651,7 +651,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 351, y: 128.2}
-  m_SizeDelta: {x: 300, y: 300}
+  m_SizeDelta: {x: 128, y: 84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &711492205
 MonoBehaviour:
@@ -798,7 +798,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh55152
+  m_Name: pb_Mesh466988
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1126,7 +1126,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh52346
+  m_Name: pb_Mesh464182
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1902,7 +1902,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53520
+  m_Name: pb_Mesh465356
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8820,7 +8820,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 369dc6e13bbc4794c97fbc693729fd0b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 025a7d177a42df6488ee59c2ce45f05b, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: base
@@ -51631,8 +51631,8 @@ MonoBehaviour:
   leftWheel: {fileID: 6978417934449298141}
   rightWheel: {fileID: 6978417934556083594}
   topSpeed: 450
-  throttleM1: 0.5
-  throttleM2: 0.5
+  throttleM1: 0.65
+  throttleM2: 0.65
   sendToRealRobot: 0
   batteryDeathIrrelevant: 0
   batteryCapacity: 0
@@ -51669,7 +51669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RenderTexture: {fileID: 8400000, guid: 51efe717e755fd444951ccb7197fa14b, type: 2}
   m_SensorName: RenderTextureSensor
-  m_Grayscale: 0
+  m_Grayscale: 1
   m_ObservationStacks: 1
   m_Compression: 1
 --- !u!114 &7098640034388745698
@@ -51688,6 +51688,14 @@ MonoBehaviour:
   showDebugMessage: 0
   defaultStreamURL: http://painbot.local:8000/stream.mjpg
   renderTexture: {fileID: 8400000, guid: 51efe717e755fd444951ccb7197fa14b, type: 2}
+  sobelMaterial: {fileID: 2100000, guid: 0d672f254eb34b94f9ad63a8b8606e15, type: 2}
+  invertMaterial: {fileID: 2100000, guid: 4d266f6887337af4aad93f316ff40f3c, type: 2}
+  thickness: 1
+  depthMultiplier: 0
+  depthBias: 1
+  normalMultiplier: 1
+  normalBias: 10
+  color: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &7099874819332293777
 GameObject:
   m_ObjectHideFlags: 0
