@@ -14,7 +14,7 @@ namespace StuPro
 
         // Articulation bodies
         [SerializeField] public ArticulationBody articulationBody;
-        [SerializeField] ArticulationBody leftWheel, rightWheel;
+        [SerializeField] ArticulationBody leftWheel, rightWheel, fork;
         [SerializeField] public ArticulationBody targetArticulationBody;
         [SerializeField] ArticulationDrive wheelDrive;
         [SerializeField] public GameObject dropZone;
@@ -22,8 +22,8 @@ namespace StuPro
         [SerializeField] Recorder recorder;
 
         // Properties for Training
-        public float actionM1 = 0;
-        public float actionM2 = 0;
+        public int actionM1 = 0;
+        public int actionM2 = 0;
         [SerializeField] float batteryCapacity = 0;
         float BatteryCapacity
         {
@@ -135,19 +135,24 @@ namespace StuPro
         // Defines the action that the robot performs each step
         public override void OnActionReceived(ActionBuffers actions)
         {
-
-
             //Penalize for each step
             AddReward(-0.0001f);
                 
             // AddReward((-1f) * ((1f / (MaxStep / decisionPeriod)) * 1.0f));
             // Read next action from action buffer
-            actionM1 = actions.ContinuousActions[1];
-            actionM2 = actions.ContinuousActions[0];
+            // actionM1 = actions.ContinuousActions[1];
+            // actionM2 = actions.ContinuousActions[0];
+
+            actionM1 = actions.DiscreteActions[0];
+            actionM2 = actions.DiscreteActions[1];
+
+            Debug.Log(actionM1 + " " + actionM2);
 
             // Clamp actions
-            var leftWheelDrive = Mathf.Clamp(actionM1, -1f, 1f);
-            var rightWheelDrive = Mathf.Clamp(actionM2, -1f, 1f);
+            // var leftWheelDrive = Mathf.Clamp(actionM1, -1f, 1f);
+            // var rightWheelDrive = Mathf.Clamp(actionM2, -1f, 1f);
+            var leftWheelDrive = actionM1 - 1; //Müsste hoffentlich -1, 0, 1 abbilden :)
+            var rightWheelDrive = actionM2 - 1;
 
             updateBattery();
 

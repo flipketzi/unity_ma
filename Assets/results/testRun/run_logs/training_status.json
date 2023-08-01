@@ -1,0 +1,32 @@
+{
+    "levelDifficulty": {
+        "lesson_num": 0
+    },
+    "base": {
+        "checkpoints": [
+            {
+                "steps": 5392,
+                "file_path": "results\\testRun\\base\\base-5392.onnx",
+                "reward": 1.160841662261416,
+                "creation_time": 1690472895.885785,
+                "auxillary_file_paths": [
+                    "results\\testRun\\base\\base-5392.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5392,
+            "file_path": "results\\testRun\\base.onnx",
+            "reward": 1.160841662261416,
+            "creation_time": 1690472895.885785,
+            "auxillary_file_paths": [
+                "results\\testRun\\base\\base-5392.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

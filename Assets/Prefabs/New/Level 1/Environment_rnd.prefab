@@ -8843,7 +8843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1472417112279458193, guid: a88906bb61f7ae7469ce0099675898ce, type: 3}
       propertyPath: m_VersionIndex
-      value: 861
+      value: 933
       objectReference: {fileID: 0}
     - target: {fileID: 2389302249602485818, guid: a88906bb61f7ae7469ce0099675898ce, type: 3}
       propertyPath: dropZone
@@ -8887,7 +8887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3161135247427838151, guid: a88906bb61f7ae7469ce0099675898ce, type: 3}
       propertyPath: m_VersionIndex
-      value: 1035
+      value: 1107
       objectReference: {fileID: 0}
     - target: {fileID: 5029950729937323935, guid: a88906bb61f7ae7469ce0099675898ce, type: 3}
       propertyPath: m_DeterministicInference
@@ -8911,7 +8911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6592234352999811964, guid: a88906bb61f7ae7469ce0099675898ce, type: 3}
       propertyPath: m_VersionIndex
-      value: 1099
+      value: 1171
       objectReference: {fileID: 0}
     - target: {fileID: 7020477831802602603, guid: a88906bb61f7ae7469ce0099675898ce, type: 3}
       propertyPath: m_RootOrder
@@ -8968,6 +8968,10 @@ PrefabInstance:
     - target: {fileID: 7790182680590117823, guid: a88906bb61f7ae7469ce0099675898ce, type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878828846946236755, guid: a88906bb61f7ae7469ce0099675898ce, type: 3}
+      propertyPath: m_ParentAnchorPosition.y
+      value: 0.0054354668
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a88906bb61f7ae7469ce0099675898ce, type: 3}

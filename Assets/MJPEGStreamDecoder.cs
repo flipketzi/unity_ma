@@ -223,10 +223,14 @@ public class MJPEGStreamDecoder : MonoBehaviour
 
         if (texture2D.width == 2)
                 return; // Failure!
-        
-        RenderTexture rt = RenderTexture.GetTemporary(texture2D.width, texture2D.height);
-        Graphics.Blit(texture2D, rt, sobelMaterial);
-        Graphics.Blit(rt, renderTexture, invertMaterial);
-        RenderTexture.ReleaseTemporary(rt);
+
+        if(sobelMaterial != null && invertMaterial != null){
+            RenderTexture rt = RenderTexture.GetTemporary(texture2D.width, texture2D.height);
+            Graphics.Blit(texture2D, rt, sobelMaterial);
+            Graphics.Blit(rt, renderTexture, invertMaterial);
+            RenderTexture.ReleaseTemporary(rt);
+        }else{
+            Graphics.Blit(texture2D, renderTexture);
+        }
     }
 }
