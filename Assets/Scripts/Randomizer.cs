@@ -55,6 +55,7 @@ namespace StuPro
 
         public string loadingStateDirName;
         public int loadingLevelPercentage;
+        public int customDifficulty;
         
 
         [SerializeField] List<Obstacle> obstacles = new List<Obstacle>();
@@ -131,7 +132,7 @@ namespace StuPro
         {
             Debug.Log("diff: " + difficulty);
 
-            if (demonstrationOn) difficulty = 11;
+            if (demonstrationOn) difficulty = customDifficulty;
 
             for (int i = 0; i < obstacles.Count; i++)
             {

@@ -29,6 +29,7 @@ namespace StuPro{
             randomizer.loadingStateDirName = loadingStateDirName;
             EditorGUILayout.LabelField(" ", EditorStyles.boldLabel);
             difficulty = EditorGUILayout.IntSlider("Difficulty: ", difficulty, 0, 11);
+            randomizer.customDifficulty = difficulty;
 
             if(GUILayout.Button("Randomize (Diff: " + difficulty + ")")){
                 randomizer.RandomizeObstacles(difficulty);

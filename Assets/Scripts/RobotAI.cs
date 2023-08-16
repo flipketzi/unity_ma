@@ -143,16 +143,16 @@ namespace StuPro
             // actionM1 = actions.ContinuousActions[1];
             // actionM2 = actions.ContinuousActions[0];
 
-            actionM1 = actions.DiscreteActions[0];
-            actionM2 = actions.DiscreteActions[1];
+            actionM1 = actions.DiscreteActions[0] - 1;
+            actionM2 = actions.DiscreteActions[1] - 1;
 
             Debug.Log(actionM1 + " " + actionM2);
 
             // Clamp actions
             // var leftWheelDrive = Mathf.Clamp(actionM1, -1f, 1f);
             // var rightWheelDrive = Mathf.Clamp(actionM2, -1f, 1f);
-            var leftWheelDrive = actionM1 - 1; //Müsste hoffentlich -1, 0, 1 abbilden :)
-            var rightWheelDrive = actionM2 - 1;
+            var leftWheelDrive = actionM1;
+            var rightWheelDrive = actionM2;
 
             updateBattery();
 

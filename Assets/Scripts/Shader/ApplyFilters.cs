@@ -5,14 +5,17 @@ using UnityEngine;
 [ExecuteInEditMode, ImageEffectAllowedInSceneView]
 public class ApplyFilters : MonoBehaviour
 {
-    [SerializeField] private Material sobelMaterial;
-    [SerializeField] private Material invertMaterial;
+    [SerializeField] public Material material;
 
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        RenderTexture rt = RenderTexture.GetTemporary(source.width, source.height);
-        Graphics.Blit(source, rt, sobelMaterial);
-        Graphics.Blit(rt, destination, invertMaterial);
-        RenderTexture.ReleaseTemporary(rt);
+        if(material == null){
+            Graphics.Blit(source, destination);
+        }
+        //RenderTexture rt = RenderTexture.GetTemporary(source.width, source.height);
+        //Material invertMaterial = new Material (invertShader);
+        Graphics.Blit(source, destination, material);
+        //Graphics.Blit(source, destination, sobelMaterial);
+        //RenderTexture.ReleaseTemporary(rt);
     }
 }
